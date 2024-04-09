@@ -72,11 +72,19 @@
 
 
 /* Custom default button */
+/btn-secondary {
+  background-color: #4355F3;
+}
+      
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
+  color: #fff;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: #0F40D8;
 }
 
 
@@ -85,13 +93,13 @@
  */
 
 body {
-  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
   /* background-image: url('pexels-binyamin-mellish-186077.jpg'); */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
+  background-color: #F8F9FF !important;
 }
 
 .cover-container {
@@ -142,13 +150,13 @@ body {
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background-color: rgba(0,0,0,0.7);
+    background-color: #F8F9FF;
   }
 
     </style>
 
   </head>
-<body class="d-flex h-100 text-center text-bg-dark">
+<body class="d-flex h-100 text-center">
   <div class="hero">
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column relative">
   <header class="mb-auto">
@@ -165,12 +173,12 @@ body {
   <main class="px-3">
     <h1>Wunderite</h1>
         <p class="lead">
-      <a href="https://app.wunderite.com" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Login to Wunderite</a>
+      <a href="https://app.wunderite.com" class="btn btn-lg btn-secondary fw-bold">Login to Wunderite</a>
     </p>
     <p class="lead">(Please excuse our appearance while our marketing site is down!)</p>
   </main>
 
-  <footer class="mt-auto text-white-50">
+  <footer class="mt-auto">
     <p>&copy; 2024 <a href="https://wunderite.com" class="text-white">Wunderite</a></p>
   </footer>
 </div></div>
